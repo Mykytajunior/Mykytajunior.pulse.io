@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   <section class="promo">
+   <section id="up" class="promo">
       <div class="container">
          <header class="header">
             <a href="#" class="header__logo">
@@ -96,9 +96,9 @@
             и мы перезвоним вам в течении 10 минут
          </p>
          <form id="consultation-form" class="feed-form" action="#">
-            <input name="name" required type="text" placeholder="Ваше имя">
-            <input name="phone" required type="tel" placeholder="Ваш телефон">
-            <input name="email" required type="email" placeholder="Ваш Е-mail">
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="phone" placeholder="Ваш телефон">
+            <input name="email" type="email" placeholder="Ваш Е-mail">
 
             <!-- <input type="submit" value="Заказать консультацию"> -->
             <button class="button button_submit">Заказать консультацию</button>
@@ -599,19 +599,19 @@
          width="100%" height="630" style="border:0;" allowfullscreen="" loading="lazy"
          referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="footer__info">
-         <address class="footer__addr">вулиця Василя Липківського, 16Б, Київ, 03135
+         <address class="footer__addr">улицa Василия Липковского, 16Б, Киев, 03135
          </address>
          <a href="tel:+380932231213" class="footer__phone">
             +38 (093) 223-12-13
          </a>
          <div class="footer__social">
-            <a href="#" class="footer__social-item">
+            <a href="https://www.facebook.com/" class="footer__social-item">
                <img src="./img/icons/facebook.svg" alt="facebook" width="25px" height="25px">
             </a>
-            <a href="#" class="footer__social-item">
+            <a href="https://www.instagram.com/" class="footer__social-item">
                <img src="./img/icons/instagram.svg" alt="instagram" width="25px" height="25px">
             </a>
-            <a href="#" class="footer__social-item">
+            <a href="https://www.pinterest.com/" class="footer__social-item">
                <img src="./img/icons/pinterest.svg" alt="pinterest" width="25px" height="25px">
             </a>
          </div>
@@ -628,7 +628,7 @@
          </div>
          <form class="feed-form feed-form__mt25" action="#">
             <input name="name" type="text" placeholder="Ваше имя">
-            <input name="phone" type="tel" placeholder="Ваш телефон">
+            <input name="phone" placeholder="Ваш телефон">
             <input name="email" type="email" placeholder="Ваш Е-mail">
             <button class="button button_submit">Заказать консультацию</button>
          </form>
@@ -642,9 +642,9 @@
             Пульсометр Polar FT1
          </div>
          <form class="feed-form feed-form__mt25" action="#">
-            <input name="name" required type="text" placeholder="Ваше имя">
-            <input name="phone" required type="tel" placeholder="Ваш телефон">
-            <input name="email" required type="email" placeholder="Ваш Е-mail">
+            <input name="name" type="text" placeholder="Ваше имя">
+            <input name="phone" placeholder="Ваш телефон">
+            <input name="email" type="email" placeholder="Ваш Е-mail">
             <button class="button button_submit">Купить</button>
          </form>
       </div>
@@ -659,11 +659,17 @@
       </div>
    </div>
 
+   <a href="#up" class="pageup">
+      <img src="./img/icons/chevron-circle-up-solid.svg" alt="up arrow">
+   </a>
+
    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
    <script src="js/slick.min.js"></script>
    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script> -->
    <script src="js/jquery.validate.min.js"></script>
+   <script src="js/jquery.maskedinput.min.js"></script>
+   <script src="mailer/smart.php"></script>
    <script src="js/script.js"></script>
 </body>
 
